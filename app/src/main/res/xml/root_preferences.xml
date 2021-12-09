@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <SwitchPreferenceCompat
+            app:key="signature"
+            app:title="Allow Access to Location"
+            app:useSimpleSummaryProvider="true" />
+
+
+        <SwitchPreferenceCompat
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="3 minutes"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="minutes"
+            app:title="@string/reply_title"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:defaultValue="Miles"
+            app:entries="@array/reply_distance"
+            app:entryValues="@array/reply_dist"
+            app:key="length"
+            app:title="Distance Units"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
